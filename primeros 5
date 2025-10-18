@@ -1,0 +1,86 @@
+
+/*let a = 9;
+let b = 5;
+let c = 3;
+let d = 0;
+let e = 2;
+let f = 4;
+let g = 6;
+let h = 7;
+let i = 8;
+let j = 10;
+let k = 16;
+
+a+b-c**d > c-c**e+b*e+f*c;
+b*c**e <= g*h+c;
+e**(b*c-e**c) >= i * a + g * b * e;
+i * e + a * b - j  != k * b - f;*/
+
+/*let a = 20;
+let b = 8;
+(a > 15) && (b < 10) || (a - b <= 20);
+(a <= 15) && ((b > 6) && (a * b > 100 -a  / b));
+(a >= 20) && (b/a >= 20 - b);*/
+
+/*let a = false;
+let b = true;
+let c = true;
+let d = true;
+
+a && !c || (b || d) && !(a && d);
+c || d && !a && b || !d;
+b && !c || !a || d && c;
+!d || b && !(!c) || !(b && !c) || !!(a || b);
+d || b && !(b || !c && !a) || !(b && !c || !d) || (!a || !(b || !d));
+*/
+
+//EJERSICIO 1
+/*function diferente (numero) {
+  if (numero < 0 || numero === 15)  {
+      return "Número negativo o igual a 15"
+  } else {
+    return Math.abs(numero - 15);
+  } 
+
+  }
+  
+console.log (diferente (15))*/
+
+//EJERSICIO 2
+
+/*function agregar (texto) {
+
+return "El usuario ha escrito: " + texto;
+
+}
+
+console.log (agregar("gris"));*/
+
+//EJERSICIO 3
+
+/*function comprobar (numero) {
+
+  if (numero % 3 ===0) {
+    return "El número es divisble entre 3"
+  }else {
+    return "El número no es divisble entre 3";
+  }
+
+}
+
+console.log (comprobar(99));*/
+
+//EJERSICIO 4
+
+/*function comprobar (numero1, numero2) {
+
+if ((numero1 >= 100 && numero1 <= 200) && (numero2 >= 100 && numero2 <= 200)){
+    return true;
+
+} else {
+     return false;
+}
+
+}
+
+console.log (comprobar (100,200)); */
