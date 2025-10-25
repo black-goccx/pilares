@@ -84,3 +84,5 @@ if ((numero1 >= 100 && numero1 <= 200) && (numero2 >= 100 && numero2 <= 200)){
 }
 
 console.log (comprobar (100,200)); */
+
+
