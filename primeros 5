@@ -85,4 +85,42 @@ if ((numero1 >= 100 && numero1 <= 200) && (numero2 >= 100 && numero2 <= 200)){
 
 console.log (comprobar (100,200)); */
 
+=======================
+CLASE 2
 
+let primerNumero = parseFloat(prompt("Ingrese el primer número: "));
+let segundoNumero= parseFloat(prompt("Ingrese segundo número: "));
+
+if (isNaN(primerNumero) || isNaN(segundoNumero)) {
+    alert ("ERROR LA INFORMACIÓN INGRESADA NO ES VALIDA");
+}else {
+
+let opcion = prompt (
+"Elige una opción: \n"+ 
+"1: Sumar los números\n"+
+"2: Restar los números\n"+
+"3: Multiplicar los número\n"
+);
+let resultado;
+
+switch (opcion) {
+  case "1":
+    resultado = primerNumero + segundoNumero;
+    alert ("El resultado es: " + resultado);
+    break;
+
+  case "2":
+    resultado = primerNumero - segundoNumero;
+    alert ("El resultado es: " + resultado);
+    break;
+
+  case "3":
+    resultado = primerNumero * segundoNumero;
+    alert ("El resultado es: " + resultado);
+    break;
+
+  default:
+    alert ("Opción no válida. Debes ingresar unicamente números");
+
+}
+}
