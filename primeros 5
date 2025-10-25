@@ -87,7 +87,7 @@ console.log (comprobar (100,200)); */
 
 =======================
 CLASE 2
-
+======================EJERSICIO 1======================
 let primerNumero = parseFloat(prompt("Ingrese el primer número: "));
 let segundoNumero= parseFloat(prompt("Ingrese segundo número: "));
 
@@ -122,5 +122,87 @@ switch (opcion) {
   default:
     alert ("Opción no válida. Debes ingresar unicamente números");
 
+}
+}
+
+==================EJERSICIO 2======================
+let numero;
+while (true) {
+numero = parseFloat(prompt("Ingrese un número impar: "));
+if (isNaN (numero) ){ 
+    alert ("Debes ingresar un número");
+ }else if ( numero % 2 === 0 ) {
+    alert("Tu número debe ser impar: " )
+    
+ }else {("Tu numero impar es: " + numero)
+
+break;
+}   
+}
+
+=====================EJERSICIO 3========================
+
+let total = 0;
+let contador = 0;
+
+while (contador <= 100) {
+    contador++;
+    
+if(contador % 2 === 0) {
+ total = total + contador;
+
+} 
+
+}
+      prompt ("La suma de los número pares que hay entre 0 y 100 es: " + total);  
+
+=====================EJERSICIO 4 ===============================
+===============version 1==============
+let cantidad = parseFloat(prompt("¡Cuantos número vas a ingresar?: "));
+if (isNaN (cantidad) || cantidad <= 0) {
+    alert ("Ingresa un valor válido");
+
+}else {
+    let suma = 0;
+    
+for (let i = 1; i<= cantidad; i++) {
+     let numero = parseFloat(prompt(`introduce el numero ${i}:` ));
+
+if (isNaN(numero)) {
+    alert ("Ingresa un valor válido");
+    i--;
+}else {
+    suma += numero;
+} 
+    
+}
+    let media = suma / cantidad;
+    alert (`La media es: ${media}`);
+}
+===================version 2==================
+No termina el programa cada que hay un error
+
+while (true) {
+    let cantidad = parseFloat(prompt("¿Cuantos número vas a ingresar?: "));
+    
+    if (isNaN (cantidad) || cantidad <= 0){
+    alert ("Ingresa un valor válido");
+
+}else {
+    let suma = 0;
+    
+for (let i = 1; i<= cantidad; i++) {
+     let numero = parseFloat(prompt(`introduce el numero ${i}:` ));
+
+if (isNaN(numero)) {
+    alert ("Ingresa un valor válido");
+    i--;
+}else {
+    suma += numero;
+} 
+    
+}
+    let media = suma / cantidad;
+    alert (`La media es: ${media}`);
 }
 }
