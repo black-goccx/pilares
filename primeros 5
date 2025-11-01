@@ -204,5 +204,145 @@ if (isNaN(numero)) {
 }
     let media = suma / cantidad;
     alert (`La media es: ${media}`);
+
 }
 }
+
+=============================================================
+                            HTML
+=============================================================
+                        <<INGRESO>>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    .center-text {
+     text-align: center;
+    }
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form>
+<fieldset class="center-text">
+
+    <legend><h1 > <strong>Información de Usuario.</strong></h1></legend>
+    <label for="name">Primer nombre</label><br>
+    <input type="text" id="name" name="name"><br>
+    <label for="pass">Contraseña</label><br>
+    <input type="Password" id="pass" name="pass"><br>
+    <input type="submit" value="Enviar">
+</fieldset>
+</form>
+<img src="https://img.freepik.com/premium-vector/welcome-word-color-square-paper-pieces_205544-13276.jpg?w=2000" alt="">
+</body>
+</html>
+
+=============================================================
+                        <<CALCULADORA>>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    .center-text {
+     text-align: center;
+    }
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h2> <strong> Bienvenido al sistema </strong> </h2>
+<p>Hola, <strong> admin </strong></p> 
+<h1 class="center-text"> <strong>---------Calculadora---------</strong></h1>
+    <form>
+<fieldset class="center-text">
+
+    <legend><h1 > <strong>Datos</strong></h1></legend>
+    <label for="num1">Primer número</label> <select name="primnum" id="primnum">
+       <option value="0"> 0 </option> 
+       <option value="1"> 1 </option>
+       <option value="2"> 2 </option>
+       <option value="3"> 3 </option>
+       <option value="4"> 4 </option>
+       <option value="5"> 5 </option>
+       <option value="6"> 6 </option>
+       <option value="7"> 7 </option>
+       <option value="8"> 8 </option>
+       <option value="9"> 9 </option>
+    
+    </select> <br>
+    <label for="num2">Segundo número</label><select name="segnum" id="segnum">
+       <option value="0"> 0 </option> 
+       <option value="1"> 1 </option>
+       <option value="2"> 2 </option>
+       <option value="3"> 3 </option>
+       <option value="4"> 4 </option>
+       <option value="5"> 5 </option>
+       <option value="6"> 6 </option>
+       <option value="7"> 7 </option>
+       <option value="8"> 8 </option>
+       <option value="9"> 9 </option>
+    </select><br>
+    
+</fieldset>
+
+
+<fieldset class="center-text">
+
+    <legend><h1 > <strong>°°°°°°Resultado°°°°°°</strong></h1></legend>
+    <button>Suma</button> <button>Resta</button><br><br>
+    <label for="resultado"></label>
+    <output id="resultado" name="resultado"></output>
+    
+    
+
+</fieldset>
+</form>
+
+</html>
+
+
+=============================================================
+                        <<INTENTO DE JAVA>>
+function idcomp () {
+    let id = parseStringe (document.getElementById("name").value.trim());
+    let pass = parseStringe (document.getElementById("pass").value.trim());
+
+    if (id === "Joseph" && pass === "1521") {
+        document.getElementById("name").textContent = "Correcto";
+        document.getElementById("name").style.color = "red";
+
+        window.location.href = "Calculadora.html";
+
+    }else {
+        
+            alert("Nombre o contraseña incorrectos");
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
