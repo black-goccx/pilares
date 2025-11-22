@@ -326,10 +326,112 @@ function idcomp () {
     }
 
 
+====================================================================
+Código pagina ejersicios de lógica:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principal</title>
+</head>
+<body>
+    <header style="text-align: center;"><strong>=====Bienvenido=====</strong></header>
+<h1>Ejersicio de lógica</h1> <br>
+<br>
+<h2>Comprobación numérica</h2> <br>
+<br>
+<fieldset style="width:25%;" >
+   <legend>Introduce tus datos</legend> <br>
+   <label for="primernumero">Primer número:</label>
+   <input type="text" id="primernumero" name="primernumero"> <br><br>
+   <label for="segundonumero">Segundo número:</label>
+   <input type="text" id="segundonumero" name="segundonumero"> <br><br>
+   <button>Analizar</button>
+
+</fieldset>
+<fieldset style="width:25%;">
+   <legend>Resultados</legend>
+   <output></output>
+   
+</fieldset>
 
 
+    <footer><strong>Joseph.Jiménez@correo.mx</strong></footer>
+</body>
+</html>
 
 
+--------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principal</title>
+</head>
+<body>
+    <header style="text-align: center;"><strong>=====Bienvenido=====</strong></header>
+<h1>Ejersicio de lógica</h1> <br>
+<br>
+<h2>Comprobación numérica</h2> <br>
+<br>
+<fieldset style="width:25%;" >
+   <legend>Introduce tus datos</legend> <br>
+   <label for="num1">Primer número:</label>
+   <input type="text" id="num1" name="num1"> <br><br>
+   <label for="num2">Segundo número:</label>
+   <input type="text" id="num2" name="num2"> <br><br>
+   <button onclick="logica(); logica2(); logica3(); logica4(); ">Analizar</button>
+
+</fieldset>
+<fieldset style="width:25%;">
+   <legend>Resultados</legend>
+   
+   <label for="total1"> El usuario ha escrito:</label>
+   <output id="total1" name="análisis1" ></output><br><br>
+
+   <label for="total2"> Menos 15, igual a 15 o negativo:</label>
+   <output id="total2" name="análisis2" ></output><br><br>
+   
+   <label for="total3"> Los números son divisibles entre 3:</label>
+   <output id="total3" name="análisis3" ></output><br><br>
+   
+   <label for="total4"> Rango en que se encuentran los números:</label>
+   <output id="total4" name="análisis4" ></output><br><br>
+</fieldset>
+<script>
+    function logica() {
+        let n1 = parseFloat(document.getElementById("num1").value);
+        let n2 = parseFloat(document.getElementById("num2").value);
+
+let resultado1 = n1 + " y " + n2;
+
+/*if (n1 < 0 || n1 === 15)  {
+      let resultado2 = "Número negativo o igual a 15"
+  } else {
+    let resultado2 = numero - 15;
+  } 
+   
+         
+        if (isNaN(n1) || isNaN(n2)) {
+            document.getElementById("total").value = "INGRESA VALORES NUMÉRICOS";
+            return;
+        } */
+   
+   
+    
+    
+        document.getElementById("total1").value = resultado1;
+        //document.getElementById("total2").value = resultado2;
+    } 
+ 
+</script>
+
+    <footer><strong>Joseph.Jiménez@correo.mx</strong></footer>
+</body>
+</html>
 
 
 
